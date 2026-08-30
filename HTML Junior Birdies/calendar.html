@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar | M&amp;E Junior Birdies</title>
+        <link rel="icon" type="image/png" href="img/MElogo.PNG">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/overrides.css">
+</head>
+<body class="about-page simple-page">
+        <header>
+                <nav class="navbar navbar-expand-lg p-0">
+                        <div class="container">
+                                <div>
+                                        <div class="logo_div_mob">
+                                                <a class="navbar-brand d-lg-none" href="Junior Birdies1.html">
+                                                        <img src="img/MElogov2.PNG" width="85" height="85" alt="M&amp;E Logo">
+                                                </a>
+                                        </div>
+                                </div>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="hamburger"><span class="inner-ham-b"><span class="inner-ham"></span></span></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav navbar_one">
+                                                <li class="nav-item"><a class="nav-link" href="about-us.html">ABOUT US</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="calendar.html">CALENDAR</a></li>
+                                        </ul>
+                                        <div class="logo_div">
+                                                <a class="navbar-brand d-none d-lg-flex" href="Junior Birdies1.html">
+                                                        <img src="img/MElogov2.PNG" width="80" height="80" alt="M&amp;E logo">
+                                                </a>
+                                        </div>
+                                        <ul class="navbar-nav ms-auto navbar_two">
+                                                <li class="nav-item t_cont"><a class="nav-link" href="join-us.html">JOIN US</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </nav>
+        </header>
+
+        <section class="about-header">
+                <h1>Calendar</h1>
+        </section>
+
+        <section class="google-calendar-section" aria-label="Google Calendar">
+                <div class="google-calendar-frame-wrap">
+                        <iframe class="google-calendar-frame" src="https://calendar.google.com/calendar/embed?src=3360d2380e0798d097bc98836e6a87efbed52a646893950a5630930fa32fa612%40group.calendar.google.com&amp;ctz=America%2FToronto" title="Junior Birdies Google Calendar" loading="lazy"></iframe>
+                </div>
+        </section>
+
+        <section class="events-feature-image" aria-label="Calendar">
+                <div class="calendar-feature-content">
+                        <div class="calendar-classes-panel">
+                                <h2>Classes</h2>
+                                <p>Friday:<br>&nbsp;&nbsp;Badminton 5:45-6:45<br>&nbsp;&nbsp;Martial Arts 7:00-8:00</p>
+                        </div>
+                        <div class="calendar-classes-image" role="img" aria-label="Junior Birdies calendar"></div>
+                </div>
+        </section>
+
+        <section class="calendar-events-section" aria-labelledby="calendar-events-title">
+                <div class="calendar-events-content">
+                        <h2 id="calendar-events-title">Events &amp; Tournaments</h2>
+                        <div class="calendar-events-gallery">
+                                <img class="calendar-medals-image" src="img/medalsfromtournament.jpg" alt="Medals from a Junior Birdies tournament">
+                                <div class="calendar-filler-images">
+                                        <img src="img/Competition 26 (Spring)/Image_20260806231125_171_36.jpg" alt="Junior Birdies tournament photo">
+                                        <img src="img/Competition 26 (Spring)/Image_20260806231132_173_36.jpg" alt="Junior Birdies badminton event photo">
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <footer class="bgColorBlack footer">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-12">
+                                        <div class="footer_data">
+                                                <div class="join_us">
+                                                        <a href="join-us.html" class="footer_heading">
+                                                                <h2 class="wow animated animate__fadeInUp">JUNIOR BIRDIES</h2>
+                                                        </a>
+                                                        <div>
+                                                                <div class="map-card">
+                                                                        <div class="left">
+                                                                                <div class="title">© 2026 M&amp;E Junior Birdies | All Rights Reserved</div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+                var navbar = document.querySelector('nav.navbar');
+                if (!navbar) return;
+
+                function updateScrolledState() {
+                        if (window.matchMedia('(min-width: 992px)').matches && window.scrollY > 20) {
+                                navbar.classList.add('scrolled');
+                        } else {
+                                navbar.classList.remove('scrolled');
+                        }
+                }
+
+                window.addEventListener('scroll', updateScrolledState);
+                window.addEventListener('resize', updateScrolledState);
+                updateScrolledState();
+        });
+        </script>
+</body>
+</html>

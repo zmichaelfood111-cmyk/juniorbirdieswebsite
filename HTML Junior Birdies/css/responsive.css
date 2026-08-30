@@ -1,0 +1,77 @@
+﻿/* responsive.css - trimmed to selectors used by Junior Birdies1.html */
+
+.contact_number_mobile { display: none }
+
+@media (min-width: 768px) {
+    .container { min-width: 94%; margin: 0 auto }
+}
+
+@media (max-width: 991px) {
+    nav.navbar { align-items: start; height: auto }
+    nav.open   { height: auto; transition: height .35s }
+
+    .logo_div_mob {
+        display: flex; width: 102px; align-items: center; justify-content: center;
+        padding: 12px 9px 6px; border-radius: 0 0 90px 90px;
+        position: absolute; top: 3px; z-index: 2
+    }
+    .logo_div_mob a { display: flex; align-items: center; justify-content: center; margin: 0; padding: 0 }
+    .navbar-brand img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; display: block }
+
+    .navbar .navbar-collapse {
+        display: block !important; max-height: 0; overflow: hidden;
+        background: #1d336f; width: 100%; opacity: 0; padding-bottom: 0;
+        transition: max-height .6s ease, opacity .6s ease, padding-bottom .6s ease
+    }
+    .navbar .navbar-collapse.collapsing {
+        max-height: 0; opacity: 0; padding-bottom: 0;
+        transition: max-height .6s ease, opacity .6s ease, padding-bottom .6s ease
+    }
+    .navbar .navbar-collapse.show {
+        max-height: 400px; opacity: 1; background: #1d336f; padding-bottom: 20px
+    }
+
+    .navbar .navbar-nav.navbar_one { padding-top: 0; margin-top: 50px; width: 100% }
+    .navbar-nav { align-items: flex-start }
+    .navbar .navbar-nav .nav-item { padding: 10px; border-bottom: 1px solid rgba(255,255,255,.36); width: 100% }
+    .navbar .navbar-nav .nav-link { color: #fff }
+
+    .navbar .navbar-nav .nav-link,
+    .navbar .navbar-nav .nav-item { background: transparent !important; -webkit-tap-highlight-color: transparent }
+    .navbar .navbar-nav .nav-link:focus,
+    .navbar .navbar-nav .nav-link:active,
+    .navbar .navbar-nav .nav-link:hover { background-color: transparent !important; outline: none; box-shadow: none }
+
+    .navbar-toggler { font-size: unset; line-height: 1; background-color: transparent; border: unset; border-radius: unset; padding: 17px 0 }
+    .navbar-toggler:focus { box-shadow: unset }
+
+    .t_cont { padding: 10px !important }
+
+    .contact_number_mobile {
+        display: block; position: absolute; right: 15%;
+        background: #fff; border-radius: 20px; padding: 4px 15px; top: 20px; font-size: 16px
+    }
+    .contact_number_mobile a { color: #000 }
+
+    nav.scrolled .navbar_one,
+    nav.scrolled .navbar_two,
+    nav.scrolled .logo_div { transform: none !important; opacity: 1 !important; left: 50% !important }
+
+    .scroll_sec { bottom: 8% }
+    .awekan_sec, .awekan_sec1 { height: calc(100vh - 250px) }
+
+    .footer_data { display: flex; flex-wrap: wrap; justify-content: space-between }
+    .footer_data .join_us { width: 100% }
+    .footer_data::before { display: none }
+}
+
+@media (max-width: 767px) {
+    .contact_number_mobile { right: 20% }
+    .footer_heading { padding-bottom: 20px }
+    .footer .address { width: 100%; margin-top: 5px }
+    .awekan_sec, .awekan_sec1 { height: calc(100vh - 250px) }
+}
+
+@media (min-width: 1400px) {
+    .footer_data::before { left: 30% }
+}
