@@ -353,6 +353,22 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600 !important; color: #1b194e }
     border: 0;
     display: block
 }
+.location-map-section .map-fallback {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    color: #555
+}
+.location-map-section .map-directions-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #1a73e8;
+    text-decoration: underline
+}
 
 /* Registration application cards */
 .registration-cards {

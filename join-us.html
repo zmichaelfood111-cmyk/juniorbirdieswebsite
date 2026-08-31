@@ -59,9 +59,23 @@
                                         <h2 class="section-title">Our Location</h2>
                                         <p class="map-address">St. Anne Catholic Elementary School</p>
 
-                                        <div class="map-card">
-                                                <iframe class="map-frame" src="https://www.google.com/maps?q=2465+Bridle+Rd,+Oshawa,+ON+L1L+0L4&z=14&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <div class="map-card" id="map-card">
+                                                <iframe class="map-frame" id="map-frame" src="https://www.google.com/maps?q=2465+Bridle+Rd,+Oshawa,+ON+L1L+0L4&z=14&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                         </div>
+                                        <a class="map-directions-link" href="https://www.google.com/maps/search/?api=1&query=2465+Bridle+Rd,+Oshawa,+ON+L1L+0L4" target="_blank" rel="noopener">Get Directions on Google Maps</a>
+                                        <script>
+                                                // In-app browsers (Instagram, Facebook, etc.) block third-party map iframes, so show a fallback link instead of a broken embed.
+                                                (function () {
+                                                        var ua = navigator.userAgent || "";
+                                                        var isInAppBrowser = /Instagram|FBAN|FBAV|Line\/|Twitter/i.test(ua);
+                                                        if (isInAppBrowser) {
+                                                                var card = document.getElementById("map-card");
+                                                                if (card) {
+                                                                        card.innerHTML = '<div class="map-fallback"><p>Map preview isn\'t available in this in-app browser.</p></div>';
+                                                                }
+                                                        }
+                                                })();
+                                        </script>
 
                                         <!-- Semester Info & Contact Section -->
                                         <div class="info-and-contact-wrapper">
