@@ -1,0 +1,683 @@
+.aboutus_content p,.clicont,.h2,.our_value_inner,.ourteamname h3,.ourteamname p,.registration_inner h3,.text,.train_sec h3,p.value_description {
+    text-align: center
+}
+
+.footer,.game_decription,.our_outervalue,.overflow,.registration_hd,.submit_btn,.train_smater,.train_smater_img {
+    overflow: hidden
+}
+
+.controlar svg,body.popupoverlay::before {
+    visibility: visible;
+    opacity: 1
+}
+
+.pull-right,.update_btn {
+    float: right
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+.bgColor {
+    background-color: #f8f8f8;
+}
+
+/* Apply the large header background only to the hero section */
+.bgColor.awekan_sec,
+.awekan_sec.bgColor {
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../img/1titlepage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact_footer p,.footer_links p,.shoe-policy span,.shoe_policy_first,.terms_policy p.tp_prara,body {
+    font-family: 'F37 Judge'
+}
+
+.btn-file,.footer_img p,.form-control,.scrolldown,.timeing li,p,span.file-name {
+    font-family: Gilroy
+}
+
+.pad80 {
+    padding: 100px 0
+}
+
+.padb80,.scrollprallax .row {
+    padding-bottom: 100px
+}
+
+.about_power .h2,.padt80 {
+    padding-top: 100px
+}
+
+html {
+    scroll-behavior: smooth!important
+}
+
+@font-face {
+    font-family: 'F37 Judge';
+    src: url('../fonts/F37Judge-Bold.eot');
+    src: url('../fonts/F37Judge-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/F37Judge-Bold.woff2') format('woff2'),url('../fonts/F37Judge-Bold.woff') format('woff'),url('../fonts/F37Judge-Bold.ttf') format('truetype'),url('../fonts/F37Judge-Bold.svg#F37Judge-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/Gilroy-Regular.woff2') format('woff2'),url('../fonts/Gilroy-Regular.woff') format('woff'),url('../fonts/Gilroy-Regular.ttf') format('truetype'),url('../fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'F37 Judge';
+    src: url('../fonts/F37Judge-Regular.eot');
+    src: url('../fonts/F37Judge-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/F37Judge-Regular.woff2') format('woff2'),url('../fonts/F37Judge-Regular.woff') format('woff'),url('../fonts/F37Judge-Regular.ttf') format('truetype'),url('../fonts/F37Judge-Regular.svg#F37Judge-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'F37 Judge Medium Extended';
+    src: url('../fonts/F37Judge-MediumExtended.eot');
+    src: url('../fonts/F37Judge-MediumExtended.eot?#iefix') format('embedded-opentype'),url('../fonts/F37Judge-MediumExtended.woff2') format('woff2'),url('../fonts/F37Judge-MediumExtended.woff') format('woff'),url('../fonts/F37Judge-MediumExtended.ttf') format('truetype'),url('../fonts/F37Judge-MediumExtended.svg#F37Judge-MediumExtended') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600!important;
+    color: #1b194e
+}
+
+p {
+    font-size: 18px
+}
+
+.navbar-brand img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.title-yellow {
+    color: #fff;
+}
+
+.bgColor.awekan_sec .awekan_sec1 h1 .masked-text {
+    color: #fff !important;
+    -webkit-text-stroke: 0 !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+
+.navbar-nav {
+    align-items: center
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #1b194e;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    position: relative;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+.navbar .navbar-nav .nav-item {
+    padding: 10px 25px 10px 0
+}
+
+.navbar .navbar_one .nav-link::after,.navbar .navbar_two .t_cont .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #1b194e;
+    transition: .5s
+}
+
+.navbar .navbar_one .nav-link:hover::after,.navbar .navbar_two .t_cont .nav-link:hover::after {
+    left: 0;
+    width: 100%
+}
+
+.fixed .hamburger span.inner-ham-b:after,.fixed .hamburger span.inner-ham-b:before,.fixed .inner-ham,.navbar.fixed .navbar_one .nav-link::after,.newyearoffer .accordion-button:not(.collapsed)::after {
+    background-color: #fff
+}
+
+nav.navbar {
+    position: fixed !important;
+    left: 0;
+    right: 0;
+    top: 0 !important;
+    margin-top: 0 !important;
+    width: 100%;
+    z-index: 9999;
+    background: #f5ce1b;
+    transition: background .4s ease, box-shadow .4s ease;
+    -webkit-animation: 1s slide-down;
+    animation: 1s slide-down
+}
+
+nav.fixed {
+    background: #f5ce1b;
+    box-shadow: 10px 10px 10px #b7b7b721
+}
+
+.navbar .navbar-collapse {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    transition: transform .9s ease-out, opacity .9s ease-out;
+    white-space: nowrap;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar_one,
+.navbar_two {
+    transition: transform .9s ease-out, opacity .9s ease-out;
+}
+
+.logo_div {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: left .9s ease-out, transform .9s ease-out, opacity .9s ease-out;
+    opacity: 1;
+    will-change: opacity, transform, left;
+}
+
+.navbar.scrolled .navbar_one {
+    transform: translateX(-125%);
+    opacity: 0;
+}
+
+.navbar.scrolled .navbar_two {
+    transform: translateX(125%);
+    opacity: 0;
+}
+
+.navbar.scrolled .logo_div {
+    left: 20px;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .navbar .navbar-collapse {
+        display: block;
+    }
+    .navbar_one,
+    .navbar_two {
+        transform: none;
+        opacity: 1;
+    }
+    .logo_div {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        margin: 0 auto;
+    }
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+
+    100% {
+        opacity: .9;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+
+    100% {
+        opacity: .9;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.accordion-body p,.closepopup:hover i,.coachdetails:hover .coachName .controlar i,.fixed .navbar_two .nav-item a,.jobopening .h2,.navbar.fixed .navbar_one .nav-link,.sub_condition p,.terms_policy h3 {
+    color: #fff
+}
+
+.footer_heading .w-50,.navbar .navbar-nav.navbar_one {
+    width: 50%
+}
+
+.navbar-expand-md .navbar-collapse {
+    justify-content: space-between;
+    padding: 2px 0;
+    position: relative
+}
+
+.navbar .navbar-nav .nav-link.mailH_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 10px;
+    background: #fff;
+    transition: .6s
+}
+
+.controlar,.footer_heading,.hamburger,.inner-ham-b,.ourteamsign,.scroll_sec,.scrolldown {
+    display: flex;
+    align-items: center
+}
+
+.mailH_logo svg {
+    width: 24px;
+    height: 24px;
+    transition: .6s
+}
+
+.hamburger,.hamburger:hover span.inner-ham-b:after,.hamburger:hover span.inner-ham-b:before {
+    width: 38px
+}
+
+.hamburger {
+    position: relative;
+    height: 37px;
+    cursor: pointer;
+    justify-content: center
+}
+
+.inner-ham-b {
+    height: 100%;
+    justify-content: center
+}
+
+.hamburger span {
+    position: relative;
+    width: 38px
+}
+
+.inner-ham {
+    width: 50px;
+    height: 2px!important;
+    background: #000;
+    transition: .4s;
+    display: block
+}
+
+.awekan_sec,.awekan_sec1 {
+    height: calc(100vh - 80px)
+}
+
+.hamburger span.inner-ham-b:after,.hamburger span.inner-ham-b:before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 31px;
+    right: 0;
+    background: #000;
+    position: absolute;
+    transition: .4s;
+    -webkit-animation: 49s infinite gradientbgAnim;
+    -moz-animation: 49s infinite gradientbgAnim;
+    -o-animation: 49s infinite gradientbgAnim;
+    animation: 49s infinite gradientbgAnim
+}
+
+.hamburger span.inner-ham-b:before {
+    top: 10px
+}
+
+.hamburger span.inner-ham-b:after {
+    bottom: 9px
+}
+
+.hamburger.close span.inner-ham {
+    width: 0
+}
+
+.hamburger.close span.inner-ham-b:before {
+    transform: rotate(45deg);
+    top: 24px
+}
+
+.hamburger.close span.inner-ham-b:after {
+    transform: rotate(-45deg);
+    bottom: 11px
+}
+
+.logo_div {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%)
+}
+
+#kaytwo .kaytwo,.awekan_sec1,.courtdetail,.facilitytourVideo,.footer_img,.footer_links_1,.homebanner,.homebannerMain,.inner-parallax,.navbar_two .nav-item:first-child a,.navbar_two .nav-item:nth-child(2),.ourteam,.parallax-image,.train_smater,.whatsapp .fa {
+    position: relative
+}
+
+.logo_div a {
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    padding: 18px;
+    border-radius: 0 0 90px 90px;
+    display: flex;
+}
+
+.navbar_two .nav-item:first-child a,.navbar_two .nav-item:nth-child(2) a {
+    font-family: Tahoma, sans-serif;
+    display: block;
+    padding: 10px 0
+}
+
+.navbar .navbar_two .t_cont .nav-link {
+    padding: 0!important
+}
+
+.fixed .navbar_two .nav-item:nth-child(2)::after {
+    background: #fff
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-brand img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+        padding: 0 1em
+    }
+}
+
+.awekan_sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.awekan_sec1 h1 {
+    font-family: Tahoma, sans-serif;
+    font-size: 4.5rem;
+}
+
+.dropin,.masked-text {
+    display: inline-block
+}
+
+.masked-text {
+    color: transparent;
+    -webkit-text-stroke: 2px #1b194e
+}
+
+.text {
+    font-size: 11.3vw;
+    text-transform: capitalize
+}
+
+.scroll_sec {
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 15%
+}
+
+.dropin {
+    padding: 8px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px #f5ce1b,-1px -1px 5px 1px #f5ce1b;
+    color: #fff;
+    background: #1b194e;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: .4s;
+    margin-right: 30px
+}
+
+.dropin:hover {
+    background: #000;
+    color: #fff
+}
+
+.scrolldown {
+    font-size: 15px;
+    color: #1b194e;
+    transition: .5s;
+    justify-content: space-between
+}
+
+#table1 tr td a,.on_boarding,.outer_scroll3,.sub_btn_div {
+    align-items: center;
+    display: flex
+}
+
+#table1 tr td del,.booking_btn2 span,.our_value_inner:hover h3,.our_value_inner:hover p,.scrolldown:hover {
+    color: #000
+}
+
+.scrolldown .outer_scroll3 {
+    margin-right: 10px;
+}
+
+.outer_scroll3 {
+    width: 20px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #1b194e;
+    justify-content: center
+}
+
+.scroll-down4 {
+    width: 1px;
+    height: 16px;
+    background: #000;
+    animation: 1.7s infinite scrollDown4;
+    margin: 0 auto
+}
+
+@keyframes scrollDown4 {
+    0% {
+        transform-origin: top;
+        transform: scaleY(0)
+    }
+
+    45% {
+        transform-origin: top;
+        transform: scaleY(1)
+    }
+
+    55% {
+        transform-origin: bottom;
+        transform: scaleY(1)
+    }
+
+    100% {
+        transform-origin: bottom;
+        transform: scaleY(0)
+    }
+}
+
+.bdminton .nav-tabs,.modal-footer,.on_boarding {
+    justify-content: center
+}
+
+.on_boarding p {
+    margin: 0 20px 0 0;
+    position: relative
+}
+
+.on_boarding p a {
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1b194e;
+    background: 0 0
+}
+
+.social_icon_banner {
+    position: relative;
+    padding-left: 20px
+}
+
+.social_icon_banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 1px;
+    height: 80%;
+    background-color: #8080806e
+}
+
+.on_boarding p::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #0000006e;
+    transition: .5s
+}
+
+.on_boarding p:hover::before {
+    right: right;
+    left: 0;
+    width: 100%
+}
+
+.on_boarding .fa {
+    color: #1b194e;
+    margin-right: 15px
+}
+
+.banerwdth {
+    width: 100%;
+    height: 100vh;
+    background-size: cover!important;
+    background-position: center 67px!important;
+    background-attachment: fixed!important;
+    background-repeat: no-repeat
+}
+
+.viewGallery {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    margin: auto;
+    z-index: 99;
+    width: max-content
+}
+
+.viewGallery .game_redirect1 span:first-child {
+    width: 60px;
+    height: 60px
+}
+
+.terms_policy h2.tp_prara,.viewGallery .game_redirect1 span:nth-child(2) {
+    font-size: 26px
+}
+
+.game_decription:hover span:nth-child(2)::after,.update_btn:hover span:nth-child(2)::after,.viewGallery:hover span:nth-child(2)::after {
+    left: auto;
+    right: 0;
+    width: 0
+}
+
+.booking_btn2:hover,.game_decription:hover span:first-child,.update_btn:hover span:first-child,.viewGallery:hover span:first-child {
+    transform: translateX(10px)
+}
+
+.homebanner1 img,.homebanner1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.courtSlider .slick-next,.courtSlider .slick-prev,.homebanner .slick-next,.homebanner .slick-prev {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-out;
+    right: 25px
+}
+
+.courtSlider .slick-next svg,.courtSlider .slick-prev svg,.homebanner .slick-next svg,.homebanner .slick-prev svg {
+    position: relative;
+    top: 0;
+    width: 90px;
+    height: 100px;
+    transition: .3s
+}
+
+.courtSlider .slick-prev,.homebanner .slick-prev {
+    left: 25px;
+    z-index: 1
+}
+
+.courtSlider .slick-prev svg:hover,.homebanner .slick-prev svg:hover {
+    transform: translate(-10px)
+}
+
+.courtSlider .slick-next svg:hover,.homebanner .slick-next svg:hover {
+    transform: translate(10px)
+}
+
+.h2 {
+    font-size: 126px;
+    margin-bottom: 60px;
+    line-height: 130px
+}
+
+.game_decription {
+    position: relative;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #1b194e;
+    border-radius: 20px
+}
