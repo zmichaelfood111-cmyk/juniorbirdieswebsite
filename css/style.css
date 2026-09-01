@@ -203,23 +203,23 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600 !important; color: #1b194e }
     font-weight: 400;
     line-height: 1.7;
 }
-.location-map-section .registration-banner-button {
+.registration-banner-button {
     display: inline-flex;
     align-items: center;
     gap: 14px;
     margin-top: 24px;
-    padding: 15px 24px;
+    padding: 19px 32px;
     border-radius: 10px;
     background: #10203e;
     color: #ffffff;
     font-family: 'Oswald', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 600;
     letter-spacing: .5px;
     text-decoration: none;
     transition: background-color .2s ease, transform .2s ease;
 }
-.location-map-section .registration-banner-button:hover {
+.registration-banner-button:hover {
     background: var(--brand-purple);
     color: #ffffff;
     transform: translateX(3px)

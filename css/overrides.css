@@ -1044,8 +1044,8 @@ body.founder-modal-open { overflow: hidden; }
 
 .semester-box-body {
     padding: 14px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
     gap: 10px;
 }
 
@@ -1055,6 +1055,32 @@ body.founder-modal-open { overflow: hidden; }
     gap: 10px;
     font-size: 15px;
     color: #2d3748;
+}
+
+.semester-detail-item:not(.semester-detail-item-classes) {
+    grid-column: 1;
+}
+
+.semester-detail-item-classes {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: center;
+    padding-left: 14px;
+    border-left: 1px solid #c5dcfa;
+}
+
+@media (max-width: 420px) {
+    .semester-box-body {
+        grid-template-columns: 1fr;
+    }
+
+    .semester-detail-item-classes {
+        grid-column: 1;
+        grid-row: auto;
+        align-self: auto;
+        padding-left: 0;
+        border-left: 0;
+    }
 }
 
 .detail-icon {
@@ -1122,6 +1148,7 @@ body.founder-modal-open { overflow: hidden; }
     width: 100%;
     margin: 0;
     padding: 28px 24px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1147,6 +1174,31 @@ body.founder-modal-open { overflow: hidden; }
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.service-unavailable .contact-form-title,
+.service-unavailable .contact-form {
+    filter: blur(4px);
+    opacity: 0.45;
+    pointer-events: none;
+    user-select: none;
+}
+
+.service-unavailable-message {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    left: 24px;
+    margin: 0;
+    transform: translateY(-50%);
+    color: #1d336f;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .contact-form .form-row {
