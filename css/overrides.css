@@ -101,7 +101,10 @@ nav.navbar.scrolled {
 /* Home page */
 .home-page .awekan_sec { border-bottom: 16px solid #1d336f; }
 
-.home-page .hero-title { animation-name: fadeInUp; }
+.home-page .hero-title {
+    animation-name: fadeInUp;
+    text-transform: uppercase;
+}
 
 .home-page .hero-scroll {
     animation-delay: 1s;
